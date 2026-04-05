@@ -44,8 +44,8 @@ NAME_START = 1         # first number, useful for adding to an existing collecti
 
 ```python
 RETURN_EFFECT          = "reverb"
-RANDOM_RETURN_EFFECT   = False
-RANDOM_RETURN_SETTINGS = False
+RANDOM_RETURN_EFFECT   = True
+RANDOM_RETURN_SETTINGS = True
 ```
 
 `RETURN_EFFECT` sets the send/return effect on the drum rack. `INSERT_EFFECT` sits after the drum rack on the main chain. Both accept the same full list of effects:
@@ -63,7 +63,7 @@ Set `RANDOM_RETURN_EFFECT = True` to pick a different return effect for every ki
 ```python
 RANDOMIZE_FX      = True
 RANDOMIZE_FX_PADS = [8, 9, 10, 11, 12, 13, 14, 15]  # 0-based, so pad 9–16
-TRANSPOSE_RANGE   = (-12, 12)
+TRANSPOSE_RANGE   = (-24, 12)
 ```
 
 When enabled, pads in `RANDOMIZE_FX_PADS` get randomized:
@@ -80,7 +80,7 @@ When enabled, pads in `RANDOMIZE_FX_PADS` get randomized:
 
 ```python
 RANDOMIZE_PAN      = True
-RANDOMIZE_PAN_PADS = "all"
+RANDOMIZE_PAN_PADS = [6, 8, 9, 10, 11, 12, 13, 14, 15]
 ```
 
 Randomizes the stereo position of each pad. Spread varies by category:
