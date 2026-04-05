@@ -16,7 +16,7 @@ Born out of laziness and a love for happy accidents — instead of building kits
 ## How to Use
 
 1. Edit the `CONFIG` block at the top of the script
-2. Run: `python ae_drumkit_generator.py`
+2. Run: `python klingklangmatze_drum-kit-generator.py`
 3. Upload the generated `.ablpresetbundle` files to Move via Move Manager, or open them directly in Note
 
 ---
